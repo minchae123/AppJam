@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6940238936872266831}
   - component: {fileID: 4656929327686232456}
   - component: {fileID: 4642356894636229241}
-  - component: {fileID: 7664403396995724983}
+  - component: {fileID: 508394149934312978}
   m_Layer: 0
-  m_Name: Stone
+  m_Name: Stone 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 32767
-  m_Sprite: {fileID: 21300000, guid: 0fc0d53d3f27bab40900fb50a0fa4ea4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 274cfaf947e39b0458daf93e31728cd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMin: 2000
   speedMax: 2000
---- !u!61 &7664403396995724983
+--- !u!61 &508394149934312978
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class StoneSpawner : MonoBehaviour
 {
-    public GameObject Stone;
+    public GameObject[] Stone;
     float Timer = 0;
     private void Update()
     {
-        float spawnTime = Random.Range(2f, 3f);
+        float spawnTime = Random.Range(2f, 5f);
+        int PrefabdjWJrh = Random.Range(0, 2);
         Timer += Time.deltaTime;
         if (Timer > spawnTime)
         {
-            Instantiate(Stone);
+            Instantiate(Stone[PrefabdjWJrh]);
             Timer = 0;
         }
     }
