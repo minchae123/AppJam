@@ -11,4 +11,5 @@ public enum ItemType
 public class ItemSO : ScriptableObject
 {
     public ItemType itemType;
+    public Sprite sprite;
 }
