@@ -8,10 +8,6 @@ public class PlayerInput : MonoBehaviour
     public Action<Vector2> PlayerXInput;
     public Action PlayerSpaceInput;
 
-
-    public bool isJump;
-
-    
     private void Awake()
     {
         if (Instance != null)
@@ -23,8 +19,6 @@ public class PlayerInput : MonoBehaviour
     {
         PlayerX();
         PlayerSpace();
-
-
     }
 
     private void PlayerX()
@@ -37,10 +31,7 @@ public class PlayerInput : MonoBehaviour
 
     private void PlayerSpace()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isJump == false)
-        {
-            isJump = true;
+        if (Input.GetKeyDown(KeyCode.Space))
             PlayerSpaceInput?.Invoke();
-        }
     }
 }

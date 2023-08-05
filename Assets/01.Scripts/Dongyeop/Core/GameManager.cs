@@ -40,6 +40,6 @@ public class GameManager : MonoBehaviour
 
     private void AddComponent()
     {
-        _components.Add(FindObjectOfType<PlayerController>());
+        
     }
 }
