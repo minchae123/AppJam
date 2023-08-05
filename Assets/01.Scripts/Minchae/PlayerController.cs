@@ -6,29 +6,21 @@ public class PlayerController : MonoBehaviour
 {
     public float jumpPower;
     private Rigidbody2D rigid;
+    private Collider2D _collider2D;
 
     public float rayDis;
     public LayerMask ground;
-    public bool isJump;
 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
+        _collider2D = GetComponent<Collider2D>();
     }
 
     private void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, rayDis, ground);
-        if (hit)
-        {
-            print("dd");
-            isJump = false;
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && isJump != true)
-        {
-            isJump = true;
+        if (Input.GetKeyDown(KeyCode.Space) && _collider2D.IsTouchingLayers(ground))
             Jump();
-        }
     }
 
     public void Jump()

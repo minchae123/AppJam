@@ -34,6 +34,5 @@ public class GameManager : MonoBehaviour
         _isGameOver = true;
         _gameOverUI.SetActive(true);
         _gameOverUI.GetComponent<GameOverUI>().Init(_score);
-        Time.timeScale = 0;
     }
 }

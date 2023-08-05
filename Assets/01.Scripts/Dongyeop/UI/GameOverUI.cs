@@ -37,13 +37,13 @@ public class GameOverUI : MonoBehaviour
         _root = _uiDocument.rootVisualElement;
 
         Label currentScoreTxt = _root.Q<Label>("CurrentScore");
-        currentScoreTxt.text = "Current Score\n" + _socre;
+        currentScoreTxt.text = "Current Score\n" + Math.Truncate(_socre * 100) / 100;
         Label beseScoreTxt = _root.Q<Label>("BestScore");
-        beseScoreTxt.text = "Best Score\n" + _bestScore;
+        beseScoreTxt.text = "Best Score\n" + Math.Truncate(_bestScore * 100) / 100;
 
         Button titleButton = _root.Q<Button>("TitleButton");
         titleButton.RegisterCallback<ClickEvent>(evt => SceneManager.LoadScene(0));
         Button restartButton = _root.Q<Button>("RestartButton");
-        titleButton.RegisterCallback<ClickEvent>(evt => SceneManager.LoadScene(0));
+        restartButton.RegisterCallback<ClickEvent>(evt => SceneManager.LoadScene(1));
     }
 }
