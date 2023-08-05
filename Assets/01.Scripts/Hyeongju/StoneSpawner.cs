@@ -5,15 +5,19 @@ using UnityEngine;
 public class StoneSpawner : MonoBehaviour
 {
     public GameObject Stone;
-    float Timer = 0;
-    private void Update()
+
+    public void StopSpawn()
     {
-        float spawnTime = Random.Range(2f, 5f);
-        Timer += Time.deltaTime;
-        if (Timer > spawnTime)
+        StopAllCoroutines();
+    }
+
+    private IEnumerator Start()
+    {
+        while (true)
         {
+            float spawnTime = Random.Range(2.0f, 5.0f);
+            yield return new WaitForSeconds(spawnTime);
             Instantiate(Stone);
-            Timer = 0;
         }
     }
 }
