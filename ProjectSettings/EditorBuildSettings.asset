@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/00.Scenes/Dongyeop/Intro.unity
     guid: c3197b66341f086499253976fc4f4c61
   - enabled: 1
-    path: Assets/00.Scenes/Dongyeop/Dongyeop.unity
-    guid: 704803760a79fe043afe6a5a83c2b95c
+    path: Assets/00.Scenes/Minchae/mIN.unity
+    guid: 31fef57fd91bacc4e986b9ccf07381c0
   m_configObjects: {}
