@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour, IPlayerComponent
 
     private void PlayerJump()
     {
-        print(Vector2.up * _playerController._playerData.JumpScale);
         _playerController.Rigidbody2D.AddForce(Vector2.up * _playerController._playerData.JumpScale, ForceMode2D.Impulse);
     }
 }
