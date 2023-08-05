@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/00.Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/00.Scenes/Dongyeop/Intro.unity
+    guid: c3197b66341f086499253976fc4f4c61
+  - enabled: 1
+    path: Assets/00.Scenes/Dongyeop/Dongyeop.unity
+    guid: afa256cab896d3e4caaf569fc8416c58
   m_configObjects: {}

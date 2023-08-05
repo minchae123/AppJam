@@ -3,4 +3,16 @@
     -unity-text-align: upper-center;
     color: rgb(0, 0, 0);
     font-size: 35px;
+    -unity-font-definition: url('project://database/Assets/99.Other/Dongyeop/Font/PF/PF%EC%8A%A4%ED%83%80%EB%8D%94%EC%8A%A4%ED%8A%B8%20SDF.asset?fileID=11400000&guid=84f909052dfc88344b7844a235d5cf85&type=2#PF스타더스트 SDF');
+}
+
+.button {
+    width: 279px;
+    height: 92px;
+    margin-left: 130px;
+    margin-right: 130px;
+    font-size: 30px;
+    -unity-font-definition: url('project://database/Assets/99.Other/Dongyeop/Font/PF/PF%EC%8A%A4%ED%83%80%EB%8D%94%EC%8A%A4%ED%8A%B8%20SDF.asset?fileID=11400000&guid=84f909052dfc88344b7844a235d5cf85&type=2#PF스타더스트 SDF');
+    background-color: rgb(209, 209, 209);
+    margin-top: 200px;
 }

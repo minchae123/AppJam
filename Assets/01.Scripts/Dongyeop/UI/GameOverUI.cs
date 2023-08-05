@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class GameOverUI : MonoBehaviour
@@ -39,5 +40,10 @@ public class GameOverUI : MonoBehaviour
         currentScoreTxt.text = "Current Score\n" + _socre;
         Label beseScoreTxt = _root.Q<Label>("BestScore");
         beseScoreTxt.text = "Best Score\n" + _bestScore;
+
+        Button titleButton = _root.Q<Button>("TitleButton");
+        titleButton.RegisterCallback<ClickEvent>(evt => SceneManager.LoadScene(0));
+        Button restartButton = _root.Q<Button>("RestartButton");
+        titleButton.RegisterCallback<ClickEvent>(evt => SceneManager.LoadScene(0));
     }
 }
