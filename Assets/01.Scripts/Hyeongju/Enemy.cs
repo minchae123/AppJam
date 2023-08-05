@@ -37,6 +37,8 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            print("аж╠щ");
+            Destroy(collision.gameObject);
             playerDie = true;
         }
     }
