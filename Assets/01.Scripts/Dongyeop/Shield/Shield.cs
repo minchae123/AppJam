@@ -45,7 +45,7 @@ public class Shield : MonoBehaviour
     {
         Vector2 pos;
         pos.x = Random.Range(-14.0f, 14.0f);
-        pos.y = Random.Range(-7.0f, 7.0f);
+        pos.y = Random.Range(2f, 7.0f);
         transform.position = pos;
 
         KnifeSpawn(contractibleSpeed);
