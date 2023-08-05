@@ -34,5 +34,6 @@ public class GameManager : MonoBehaviour
         _isGameOver = true;
         _gameOverUI.SetActive(true);
         _gameOverUI.GetComponent<GameOverUI>().Init(_score);
+        FindObjectOfType<PlayerController>().GameOver();
     }
 }

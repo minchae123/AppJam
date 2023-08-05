@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     public float rayDis;
     public LayerMask ground;
 
+    public Animator enemyAnimator;
+    public BackgroundMove backMove;
+
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
@@ -26,5 +29,15 @@ public class PlayerController : MonoBehaviour
     public void Jump()
     {
         rigid.AddForce(jumpPower * Vector2.up, ForceMode2D.Impulse);
+    }
+
+    public void GameOver()
+    {
+        Animator animator = GetComponent<Animator>();
+        animator.SetTrigger("Hurt");
+        enemyAnimator.SetTrigger("Over");
+        backMove.enabled = false;
+
+        //Destroy(GetComponent<Animator>());
     }
 }

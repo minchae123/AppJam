@@ -22,6 +22,8 @@ public class Shield : MonoBehaviour
 
     private IEnumerator _contractibleCo;
 
+    public ParticleSystem particle;
+
     private void Awake()
     {
         _txt = GameObject.Find("Text").GetComponent<TextMeshProUGUI>();
@@ -102,7 +104,10 @@ public class Shield : MonoBehaviour
     {
         if (Input.GetKeyDown(_keyCode))
         {
+            Instantiate(particle.gameObject, transform.position, Quaternion.identity);
+
             GameManager.Instance.Score += Vector3.Distance(transform.position, _knife.position);
+
             Init(_contractibleSpeed - (_contractibleSpeed / 50));
         }
         else if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.R))

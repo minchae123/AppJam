@@ -370,7 +370,7 @@ Transform:
   m_GameObject: {fileID: 267867838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 605945053}
@@ -421,6 +421,7 @@ MonoBehaviour:
   - {fileID: 1589804909, guid: 7239a20fe78146240bcec1700906c1de, type: 3}
   - {fileID: -364461798, guid: 7239a20fe78146240bcec1700906c1de, type: 3}
   - {fileID: -985584667, guid: 7239a20fe78146240bcec1700906c1de, type: 3}
+  particle: {fileID: 7788374890456181480, guid: dd0677f684a7bcd408cde9d08b6a0c1b, type: 3}
 --- !u!1 &289367241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,7 +1744,6 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 64
-  isJump: 0
 --- !u!1 &1653711794
 GameObject:
   m_ObjectHideFlags: 0
