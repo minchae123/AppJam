@@ -222,7 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerData: {fileID: 11400000, guid: 937aaef234409a145a8f5941f6d9ba8b, type: 2}
   Rigidbody2D: {fileID: 0}
-  rayDis: 0.5
+  rayDis: 1
   ground:
     serializedVersion: 2
     m_Bits: 64
