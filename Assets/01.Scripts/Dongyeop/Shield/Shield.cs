@@ -103,7 +103,7 @@ public class Shield : MonoBehaviour
         if (Input.GetKeyDown(_keyCode))
         {
             GameManager.Instance.Score += Vector3.Distance(transform.position, _knife.position);
-            Init(_contractibleSpeed - (_contractibleSpeed / 100));
+            Init(_contractibleSpeed - (_contractibleSpeed / 50));
         }
         else if (Input.anyKeyDown)
             GameManager.Instance.GameOver();
