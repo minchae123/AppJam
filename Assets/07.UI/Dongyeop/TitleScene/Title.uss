@@ -1,0 +1,12 @@
+.button {
+    width: 15%;
+    height: 7.5%;
+    font-size: 50px;
+    -unity-font: initial;
+    color: rgb(41, 41, 41);
+    margin-bottom: 7.5px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
