@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -37,21 +36,21 @@ public class PPManager : MonoBehaviour
         
         _blurredCo = BlureedCo(0, 0);
         _vignette.intensity.value = 0;
-        _playerTrm = transform.position; // 차후 수정 해야함. 플레이어 포지션으로 
+        _playerTrm = GameManager.Instance.Player.transform.position; 
     }
 
     private void Update()
     {
         Collider2D[] collider = Physics2D.OverlapCircleAll(_playerTrm, _distance, _whatIsEnemy);
 
-        if (collider.Length != 0 && !_isBlurred) //어두워지고
+        if (collider.Length != 0 && !_isBlurred) //??ο?????
         {
             _isBlurred = true;
             StopCoroutine(_blurredCo);
             _blurredCo = BlureedCo(0.5f, 1);
             StartCoroutine(_blurredCo);
         }
-        else if (collider.Length == 0 && _isBlurred) //밝아지고 
+        else if (collider.Length == 0 && _isBlurred) //??????? 
         {
             _isBlurred = false;
             StopCoroutine(_blurredCo);
