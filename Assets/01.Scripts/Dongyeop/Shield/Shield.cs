@@ -19,9 +19,10 @@ public class Shield : MonoBehaviour
     private TextMeshProUGUI _txt;
     private KeyCode _keyCode;
     private ShieldKeyState _shieldKeyState;
-    private AudioSource _audioSource;
 
     private IEnumerator _contractibleCo;
+
+    public ParticleSystem particle;
 
     private void Awake()
     {
@@ -29,7 +30,6 @@ public class Shield : MonoBehaviour
         _knife = transform.GetChild(1).transform;
         _knifeSpriteRenderer = _knife.GetChild(0).GetComponent<SpriteRenderer>();
         _knifeTraileRenderer = _knifeSpriteRenderer.GetComponent<TrailRenderer>();
-        _audioSource = GetComponent<AudioSource>();
         _contractibleCo = ContractibleCo(0);
         StartCoroutine(_contractibleCo);
         Init(2);
@@ -104,8 +104,10 @@ public class Shield : MonoBehaviour
     {
         if (Input.GetKeyDown(_keyCode))
         {
-            _audioSource.Play();
+            Instantiate(particle.gameObject, transform.position, Quaternion.identity);
+
             GameManager.Instance.Score += Vector3.Distance(transform.position, _knife.position);
+
             Init(_contractibleSpeed - (_contractibleSpeed / 50));
         }
         else if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.R))

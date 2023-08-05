@@ -41,5 +41,7 @@ public class GameManager : MonoBehaviour
         _isGameOver = true;
         _gameOverUI.SetActive(true);
         _gameOverUI.GetComponent<GameOverUI>().Init(_score);
+        FindObjectOfType<StoneSpawner>().StopSpawn();
+        FindObjectOfType<PlayerController>().GameOver();
     }
 }

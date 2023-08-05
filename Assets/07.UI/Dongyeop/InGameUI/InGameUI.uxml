@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:VisualElement name="Container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row-reverse;">
-        <ui:Label tabindex="-1" text="0&#10;" display-tooltip-when-elided="true" name="Score" style="font-size: 30px; -unity-font-definition: url(&apos;project://database/Assets/99.Other/Dongyeop/Font/PF/PF%EC%8A%A4%ED%83%80%EB%8D%94%EC%8A%A4%ED%8A%B8%20SDF.asset?fileID=11400000&amp;guid=84f909052dfc88344b7844a235d5cf85&amp;type=2#PF스타더스트 SDF&apos;); color: rgb(0, 0, 0); flex-basis: 100%; -unity-text-align: upper-right;" />
+        <ui:Label tabindex="-1" text="0&#10;" display-tooltip-when-elided="true" name="Score" style="font-size: 65px; -unity-font-definition: url(&apos;project://database/Assets/99.Other/Dongyeop/Font/PF/PF%EC%8A%A4%ED%83%80%EB%8D%94%EC%8A%A4%ED%8A%B8%20SDF.asset?fileID=11400000&amp;guid=84f909052dfc88344b7844a235d5cf85&amp;type=2#PF스타더스트 SDF&apos;); color: rgb(0, 0, 0); flex-basis: 100%; -unity-text-align: upper-right; -unity-font-style: bold;" />
     </ui:VisualElement>
 </ui:UXML>

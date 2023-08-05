@@ -6,4 +6,12 @@
     color: rgb(0, 0, 0);
     font-size: 33px;
     background-color: rgb(214, 214, 214);
+    transition-duration: 0.2s;
+    transition-delay: 0.1s;
+    -unity-font-style: bold;
+}
+
+.button:hover {
+    width: 400px;
+    height: 125px;
 }
