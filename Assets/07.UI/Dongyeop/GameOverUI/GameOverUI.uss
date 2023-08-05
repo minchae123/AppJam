@@ -1,0 +1,6 @@
+.Txt {
+    flex-basis: 50%;
+    -unity-text-align: upper-center;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}

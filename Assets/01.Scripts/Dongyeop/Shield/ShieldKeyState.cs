@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IComponent
+public enum ShieldKeyState 
 {
-    public void UpdateState(GameState state);
+    Q = 0,
+    W = 1,
+    E = 2,
+    R = 3
 }

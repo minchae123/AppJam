@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/07.UI/Dongyeop/GameOverUI/GameOverUI.uss?fileID=7433441132597879392&amp;guid=afc5895476ac344408c39ae712a9fd92&amp;type=3#GameOverUI" />
+    <ui:VisualElement name="Container" style="background-color: rgba(159, 159, 159, 0.25); align-items: center; flex-basis: 100%;">
+        <ui:Label tabindex="-1" text="GameOver" display-tooltip-when-elided="true" name="GameOverTxt" style="width: 100%; height: 30%; font-size: 219px; color: rgb(0, 0, 0); -unity-text-align: middle-center; margin-top: 202px;" />
+        <ui:VisualElement name="Scorebar" style="background-color: rgba(0, 0, 0, 0); flex-basis: 12.5%; width: 55%; flex-direction: row;">
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="CurrentScore" class="Txt" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="BestScore" class="Txt" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
