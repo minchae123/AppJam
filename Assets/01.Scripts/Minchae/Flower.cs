@@ -8,12 +8,27 @@ public class Flower : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            StageClear();
+            TouchFlower();
         }
     }
 
-    public void StageClear()
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        print("스테이지 클리어");
+        if(collision.collider.CompareTag("Player"))
+        {
+            ExitFlower();
+        }
+    }
+
+    public void ExitFlower()
+    {
+        print(2);
+        TimeController.Instance.StartCoroutine(TimeController.Instance.ReFlower());
+    }
+
+    public void TouchFlower()
+    {
+        print(1);
+        TimeController.Instance.StopTime();
     }
 }
