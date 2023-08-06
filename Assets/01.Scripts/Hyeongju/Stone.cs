@@ -24,6 +24,7 @@ public class Stone : MonoBehaviour
         if(collision.collider.CompareTag("Player"))
         {
             FindObjectOfType<StoneSpawner>().StopSpawn();
+            Destroy(FindAnyObjectByType<StoneSpawner>().gameObject);
             GameManager.Instance.GameOver();
             Destroy(gameObject);
         }
